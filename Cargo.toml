@@ -1,5 +1,5 @@
 [package]
-name = "gluster_dir_health_check"
+name = "gluster-dir-health-check"
 version = "0.1.1"
 authors = ["Aravinda VK <mail@aravindavk.in>"]
 

@@ -13,16 +13,20 @@ A tool to detect stale or boken directories in Gluster bricks. This tool can det
 
 If Rust is installed in your machine then run the following
 
-    cargo install --git https://github.com/aravindavk/gluster_dir_health_check
+    cargo install --git https://github.com/aravindavk/gluster-dir-health-check
+
+The easiest way to get this tool is to download a binary and place it in a directory within your $PATH, such as /usr/local/bin.
+
+
 
 ## Usage
 
-    gluster_dir_health_check <brick_path>
+    gluster-dir-health-check <brick_path>
 
 Example:
 
-    gluster_dir_health_check /bricks/b1
-    gluster_dir_health_check /bricks/b1 > ~/bricks_b1_dirs_status.txt
+    gluster-dir-health-check /bricks/b1
+    gluster-dir-health-check /bricks/b1 > ~/bricks_b1_dirs_status.txt
 
 ## Output
 
