@@ -13,7 +13,7 @@ A tool to detect stale or boken directories in Gluster bricks. This tool can det
 
 If Rust is installed in your machine then run the following
 
-    cargo install gluster_dir_health_check --git https://github.com/aravindavk/gluster_dir_health_check
+    cargo install --git https://github.com/aravindavk/gluster_dir_health_check
 
 ## Usage
 
