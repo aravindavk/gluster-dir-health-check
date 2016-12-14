@@ -10,14 +10,14 @@ A tool to detect stale or boken directories in Gluster bricks. This tool can det
 **Invalid Parent GFID**: Invalid data in `trusted.gfid` xattr of parent dir  
 
 ## Install
-
 If Rust is installed in your machine then run the following
 
     cargo install --git https://github.com/aravindavk/gluster-dir-health-check
 
 The easiest way to get this tool is to download a binary and place it in a directory within your $PATH, such as /usr/local/bin.
 
-
+    wget https://github.com/aravindavk/gluster-dir-health-check/releases/download/v0.1.1/gluster-dir-health-check-linux-x86_64.tar.gz
+    sudo mv gluster-dir-health-check /usr/local/bin/
 
 ## Usage
 
