@@ -1,6 +1,6 @@
 [package]
 name = "gluster_dir_health_check"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Aravinda VK <mail@aravindavk.in>"]
 
 [dependencies]

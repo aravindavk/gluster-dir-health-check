@@ -13,7 +13,7 @@ fn filter_dirs(en: &DirEntry) -> bool {
     // To ignore internal directories
     en.file_name()
         .to_str()
-        .map(|s| s.starts_with(".glusterfs") || s.starts_with(".trashcan"))
+        .map(|s| s.starts_with(".glusterfs") || s.starts_with(".trashcan") || s.starts_with(".shard"))
         .unwrap_or(false)
 }
 
