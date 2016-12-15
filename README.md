@@ -14,10 +14,10 @@ If Rust is installed in your machine then run the following
 
     cargo install --git https://github.com/aravindavk/gluster-dir-health-check
 
-The easiest way to get this tool is to download a binary from [here](https://github.com/aravindavk/gluster-dir-health-check/releases/download/v0.1.1/gluster-dir-health-check-linux-x86_64.tar.gz) and place it in a directory within your $PATH, such as /usr/local/bin.
+The easiest way to get this tool is to download a binary from [here](https://github.com/aravindavk/gluster-dir-health-check/releases/download/v0.1.1/gluster-dir-health-check-0.1.1-linux-x86_64.tar.gz) and place it in a directory within your $PATH, such as /usr/local/bin.
 
-    wget https://github.com/aravindavk/gluster-dir-health-check/releases/download/v0.1.1/gluster-dir-health-check-linux-x86_64.tar.gz
-    tar xvf gluster-dir-health-check-linux-x86_64.tar.gz
+    wget https://github.com/aravindavk/gluster-dir-health-check/releases/download/v0.1.1/gluster-dir-health-check-0.1.1-linux-x86_64.tar.gz
+    tar xvf gluster-dir-health-check-0.1.1-linux-x86_64.tar.gz
     sudo mv gluster-dir-health-check /usr/local/bin/
 
 ## Usage
