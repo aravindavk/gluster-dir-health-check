@@ -91,12 +91,10 @@ fn get_paths(path: &str) {
 
             // Construct the gfid path as
             // $BRICK/.glusterfs/<gfid[0:2]>/<gfid[2:4]>/<gfid>
-            let (first_two, last) = gfid.split_at(2);
-            let (next_two, _) = last.split_at(2);
             let gfid_path = Path::new(path)
                 .join(".glusterfs")
-                .join(first_two)
-                .join(next_two)
+                .join(&gfid[0..2])
+                .join(&gfid[2..4])
                 .join(&gfid);
 
             // Get Parent Dir GFID
@@ -116,11 +114,9 @@ fn get_paths(path: &str) {
 
             // Construct the pgfid path to compare with symlink target
             // ../../<pgfid[0:2]>/<pgfid[2:4]>/<pgfid>/<dirname>
-            let (first_two_pgfid, last) = pgfid.split_at(2);
-            let (next_two_pgfid, _) = last.split_at(2);
             let pgfid_path = Path::new("../../")
-                .join(first_two_pgfid)
-                .join(next_two_pgfid)
+                .join(&pgfid[0..2])
+                .join(&pgfid[2..4])
                 .join(&pgfid)
                 .join(entry.file_name().to_str().unwrap());
 
